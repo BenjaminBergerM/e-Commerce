@@ -16,14 +16,27 @@
 <ul>
     <div>
         <li><i class="fas fa-graduation-cap"></i></li>
-        <li><a href="#">Nombre</a></li>
+        <li><a class="nav-a" href="#">Nombre</a></li>
     </div>
     <div>
-        <li id="registro"><a href="#">Registro</a></li>
+        <li id="registro"><a class="nav-a" href="#">Registro</a></li>
         <li class="user" ><i class="fas fa-user"></i></li>
     </div>
 </ul>
 </nav>
+<main>
+    <h1>Encontra profesores en tres simples pasos</h1>
+    <div>
+        <h2>Busca</h2>
+    </div>
+    <div>
+        <h2>Elegi</h2>
+    </div>
+    <div>
+        <h2>Aprende</h2>
+    </div>
+</main>
+
 <footer>
 <ul>
     <li><a href="#">Terminos y condiciones</a></li>

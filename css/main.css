@@ -35,7 +35,7 @@ body{
     margin: 0;
 
 }
-a{
+.nav-a{
     color: aliceblue;
     text-decoration: none;
 }
@@ -59,8 +59,25 @@ footer>ul{
     justify-content: space-around;
 }
 footer>ul>li{
-    color: rgb(51, 50, 50);
+    color: rgb(56, 56, 56);
 }
+footer>ul>li>a{
+    color: rgb(56, 56, 56);
+    text-decoration: none;}
 .redes{
     list-style: none;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main>div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
