@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 <body>
 <header>
@@ -14,10 +14,14 @@
 </header>
 <nav>
 <ul>
-    <li><i class="fas fa-graduation-cap"></i></li>
-    <li><a href="#">Nombre</a></li>
-    <li id="registro"><a href="#">Registro</a></li>
-    <li><i class="fas fa-user"></i></li>
+    <div>
+        <li><i class="fas fa-graduation-cap"></i></li>
+        <li><a href="#">Nombre</a></li>
+    </div>
+    <div>
+        <li id="registro"><a href="#">Registro</a></li>
+        <li class="user" ><i class="fas fa-user"></i></li>
+    </div>
 </ul>
 </nav>
 <footer>

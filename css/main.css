@@ -8,8 +8,13 @@ nav{
 }
 i{   
     color: aliceblue;
-    
    
+}
+.user{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0px 5px 0px 0px; 
 }
 nav>ul{
     width: 100%;
@@ -17,13 +22,20 @@ nav>ul{
     list-style: none;
     margin: 0%; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+nav>ul>div{
+    display: flex;
+}
+div>li{
+    margin: 5px;
+    font-size: 21px;
 }
 body{
     margin: 0;
 
 }
-nav>ul>li>a{
+a{
     color: aliceblue;
     text-decoration: none;
 }
