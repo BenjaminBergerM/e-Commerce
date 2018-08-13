@@ -1,4 +1,4 @@
-nav{
+nav {
     background-color: rgb(133, 243, 106);
     margin: 0;
     padding: 0;
@@ -6,40 +6,46 @@ nav{
     display: flex;
     align-items: center
 }
-i{   
+
+i {
     color: aliceblue;
-   
 }
-.user{
+
+.user {
     background-color: grey;
     border-radius: 50%;
     padding: 5px;
-    margin: 0px 5px 0px 0px; 
+    margin: 0px 5px 0px 0px;
 }
-nav>ul{
+
+nav>ul {
     width: 100%;
     padding: 0%;
     list-style: none;
-    margin: 0%; 
+    margin: 0%;
     display: flex;
     justify-content: space-between;
 }
-nav>ul>div{
+
+nav>ul>div {
     display: flex;
 }
-div>li{
+
+div>li {
     margin: 5px;
     font-size: 21px;
 }
-body{
-    margin: 0;
 
+body {
+    margin: 0;
 }
-.nav-a{
+
+.nav-a {
     color: aliceblue;
     text-decoration: none;
 }
-footer{
+
+footer {
     background-color: rgb(133, 243, 106);
     margin: 0;
     padding: 0;
@@ -50,33 +56,41 @@ footer{
     bottom: 0%;
     width: 100%;
 }
-footer>ul{
+
+footer>ul {
     width: 100%;
     padding: 0%;
     list-style: none;
-    margin: 0%; 
+    margin: 0%;
     display: flex;
     justify-content: space-around;
 }
-footer>ul>li{
+
+footer>ul>li {
     color: rgb(56, 56, 56);
 }
-footer>ul>li>a{
+
+footer>ul>li>a {
     color: rgb(56, 56, 56);
-    text-decoration: none;}
-.redes{
+    text-decoration: none;
+}
+
+.redes {
     list-style: none;
 }
-main{
+
+main {
     display: flex;
     flex-wrap: wrap;
 }
-main>div{
+
+main>div {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-h2{
+
+h2 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
