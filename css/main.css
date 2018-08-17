@@ -3,10 +3,10 @@ body {
 }
 
 nav {
-    background-color: rgb(133, 243, 106);
+    background-color: #03A9F4;
     margin: 0;
-    padding: 0;
-    height: 45px;
+    padding: 0px 65px;
+    height: 65px;
     display: flex;
     align-items: center
 }
@@ -41,8 +41,12 @@ body {
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 footer{
     background-color: rgb(133, 243, 106);
+=======
+footer {
+>>>>>>> Stashed changes
     margin: 0;
     padding: 0;
     height: 45px;
@@ -102,6 +106,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 }
+<<<<<<< Updated upstream
 .categoria{
   margin: 0;
   padding: 0;
@@ -116,3 +121,9 @@ h3{
     display: flex;
     justify-content: center;
 }
+=======
+
+img {
+    width: 100%;
+}
+>>>>>>> Stashed changes
