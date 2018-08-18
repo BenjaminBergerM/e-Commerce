@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +8,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="test.js"></script>
-
 </head>
-
 <body>
     <header>
-        <nav id="prueba">
+        <nav>
             <ul>
                 <div>
                     <li class="header-i"><i class="fas fa-graduation-cap"></i></li>
@@ -27,35 +23,48 @@
                 </div>
             </ul>
         </nav>
-        <img src="images/banner2.jpg" alt="">
     </header>
     <main>
-        <h1>Encontra profesores en tres simples pasos</h1>
-        <div>
-            <div class="main-i"><i class="fas fa-search"></i></div>
-            <h2>Busca</h2>
-        </div>
-        <div>
-            <div class="main-i"><i class="fas fa-chalkboard-teacher"></i></div>
-            <h2>Elegi</h2>
-        </div>
-        <div>
-            <div class="main-i"><i class="fab fa-leanpub"></i></div>
-            <h2>Aprende</h2>
-        </div>
-        <div class="div-cat">
+        <section class="banner">
+            <div></div>
+            <form action="">
+                <select name="materia" id="">
+                    <option value="math">Matematicas</option>
+                    <option value="math">Historia</option>
+                    <option value="math">Geografia</option>
+                </select>
+                <input type="text" placeholder="¿Dónde estás buscando?">
+                <input type="submit" value="Buscar">
+            </form>
+        </section>
+        <section class="pasos">
+            <h2>Encontra profesores en tres simples pasos</h2>
+            <article>
+                <h2>Busca</h2>
+                <i class="fas fa-search"></i>
+            </article>
+            <article>
+                <h2>Elegi</h2>
+                <i class="fas fa-chalkboard-teacher"></i>
+            </article>
+            <article>
+                <h2>Aprende</h2>
+                <i class="fab fa-leanpub"></i>
+            </article>
+        </section>
+        <section class="categoria">
             <h3>Busca por categoria</h3>
-            <a class="categoria" href="#">Matematicas</a>
-            <a class="categoria" href="#">Historia</a>
-            <a class="categoria" href="#">Geografia</a>
-            <a class="categoria" href="#">Economia</a>
-            <a class="categoria" href="#">Teoria Contable</a>
-            <a class="categoria" href="#">Dibujo</a>
-            <a class="categoria" href="#">Ingles</a>
-            <a class="categoria" href="#">Frances</a>
-            <a class="categoria" href="#">Canto</a>
-            <a class="categoria" href="#">Baile</a>
-        </div>
+            <article> <a class="categoria" href="#">Matematicas</a> </article>
+            <article> <a class="categoria" href="#">Historia</a> </article>
+            <article> <a class="categoria" href="#">Geografia</a> </article>
+            <article> <a class="categoria" href="#">Economia</a> </article>
+            <article> <a class="categoria" href="#">Teoria Contable</a> </article>
+            <article> <a class="categoria" href="#">Dibujo</a> </article>
+            <article> <a class="categoria" href="#">Ingles</a> </article>
+            <article> <a class="categoria" href="#">Frances</a> </article>
+            <article> <a class="categoria" href="#">Canto</a> </article>
+            <article> <a class="categoria" href="#">Baile</a> </article>
+        </section>
     </main>
     <footer>
         <ul>
@@ -70,6 +79,4 @@
         </ul>
     </footer>
 </body>
-
-
 </html>

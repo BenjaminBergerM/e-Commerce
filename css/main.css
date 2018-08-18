@@ -1,6 +1,69 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+/* Banner */
+
+.banner {
+    display: flex;
+    position: relative;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner>form {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner>div {
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://cdn2.educacion2.com/wp-content/uploads/2017/03/profesor-particular-2.jpg);
+    background-size: cover;
+    background-position: -113px;
+}
+
+.banner>form>input[type=text], .banner>form>select {
+    height: 51px;
+    border: 0;
+    width: 90%;
+    color: #ccc;
+    background-color: #FFF;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.banner>form>select {
+    border-radius: 3px 3px 0px 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px 3px 0px 0px;
+}
+
+.banner>form>input[type=text] {
+    border-radius: 0px 0px 3px 3px;
+    margin-bottom: 15px;
+}
+
+.banner>form>input[type=submit] {
+    height: 51px;
+    border: 0;
+    width: 90%;
+    color: #FFF;
+    background-color: #308cca;
+    border-radius: 3px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+}
+
+/* Fin banner */
+
+/* Barra de navegación */
 
 nav {
     background-color: #03A9F4;
@@ -11,10 +74,11 @@ nav {
     align-items: center
 }
 
-.header-i>i{
+.header-i>i {
     color: aliceblue;
 }
-nav>ul{
+
+nav>ul {
     width: 100%;
     padding: 0%;
     list-style: none;
@@ -25,6 +89,7 @@ nav>ul{
 
 nav>ul>div {
     display: flex;
+    align-items: center;
 }
 
 div>li {
@@ -41,12 +106,12 @@ body {
     text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-footer{
-    background-color: rgb(133, 243, 106);
-=======
+/* Fin barra de navegación */
+
+
+/* Footer */
+
 footer {
->>>>>>> Stashed changes
     margin: 0;
     padding: 0;
     height: 45px;
@@ -77,53 +142,116 @@ footer>ul>li>a {
 .redes {
     list-style: none;
 }
-h1{
-    text-align: center;
-    color: gray;
+
+/* Fin footer */
+
+/* Pasos */
+
+.pasos {
+    background-color: #f8f8f8;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 25px;
 }
+
+.pasos>article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+
+.pasos>h2 {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    color: #308cca;
+}
+
+.pasos>article>h2 {
+    color: #bcbcbc;
+}
+
+.pasos>article>i {
+    font-size: 75px;
+    color: #3c3f4f;
+}
+
+/* Fin pasos */
+
+/* Categorias */
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgb(56, 56, 56);
+}
+
+
+/* Fin categorias */
+
 main>div {
     width: 100%;text-align: center;
 }
-.main-i{
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-}
-.main-i>i{
-    font-size: 75px;
-    color: gray;
-}
+
 h2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: gray;
+    color: white;
 }
 
-.div-cat{
+.div-cat {
     display: flex;
     flex-wrap: wrap;
 }
-<<<<<<< Updated upstream
-.categoria{
-  margin: 0;
-  padding: 0;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  color: rgb(56, 56, 56);
-  text-decoration: none;
-}
-h3{
+
+h3 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-=======
 
 img {
     width: 100%;
 }
->>>>>>> Stashed changes
+
+
+
+@media only screen and (min-width: 600px) {
+    .banner {
+        height: 80vh;
+    }
+    .banner>div {
+        height: 80vh;
+        background-position-x: 0px;
+    }
+    .banner>form {
+        flex-direction: row;
+        align-items: normal;
+        width: 90%;
+        bottom: 10%;
+    }
+    .banner>form>select {
+        border-radius: 3px 0px 0px 3px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 3px 0px 0px 3px;
+    }
+    
+    .banner>form>input[type=text] {
+        border-radius: 0px 3px 3px 0px;
+        margin-right: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .pasos {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}   
+
+
