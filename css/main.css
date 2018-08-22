@@ -68,7 +68,7 @@ body {
 nav {
     background-color: #03A9F4;
     margin: 0;
-    padding: 0px 65px;
+    padding: 0px 4vw;
     height: 65px;
     display: flex;
     align-items: center
@@ -197,6 +197,41 @@ footer>ul>li>a {
 
 /* Fin categorias */
 
+/*Comienzo de faq (en progreso)*/
+section.faq{
+    margin-top: 2.1em;
+}
+section.faq > article{
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    padding: 0 2vw;
+}
+section.faq > article > h1{
+    font-size: 1.5em;
+    margin: 1em .5em;
+}
+section.faq > section > article > h2{
+    font-size: 1.3em;
+    color: #3c3f4f;
+    margin: 1em .8em;
+}
+section.faq > section > article > h3 {
+    justify-content: left;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #3c3f4f;
+    padding: 0.3em 1em;
+    margin: 0em;
+    font-weight: 500
+}
+section.faq > section > article > h3.pregunta {
+    margin: 1em 0em .2em;
+    font-weight: bold;
+
+}
+/*Fin de faq (en progreso)*/
+
+
 main>div {
     width: 100%;text-align: center;
 }
@@ -223,6 +258,8 @@ img {
 
 
 @media only screen and (min-width: 600px) {
+
+    /*Home page*/
     .banner {
         height: 80vh;
     }
@@ -252,6 +289,18 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
-}   
+    /*Fin Home page*/
 
+    /*Faq page*/
+    section.faq > section > article{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    section.faq > section{
+        padding: 0em 2vw;
+        display: flex;
+    }
+    /*Fin Faq page*/
+}   
 
