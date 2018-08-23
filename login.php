@@ -12,26 +12,38 @@
 <body>
     <header>
         <nav>
-        <ul>
-            <div>
-                <li><i class="fas fa-graduation-cap"></i></li>
-                <li><a href="#">Nombre</a></li>
-            </div>
-            <div>
-                <li id="registro"><a href="#">Registro</a></li>
-                <li class="user" ><i class="fas fa-user"></i></li>
-            </div>
-        </ul>
+            <ul>
+                <div>
+                    <li class="header-i"><i class="fas fa-graduation-cap"></i></li>
+                    <li><a class="nav-a" href="/">Nombre</a></li>
+                </div>
+                <div>
+                    <li id="registro"><a class="nav-a" href="#">Registro</a></li>
+                    <li><i class="fas fa-user-circle fa-2x"></i></li>
+                </div>
+            </ul>
         </nav>
     </header>
+    <main>
+        <div class="login-form">
+            <form action="" method="post">
+                <h3>Login</h3>
+                <label for="">Email:</label>
+                <input type="text">
+                <label for="">Contrasenia:</label>
+                <input type="password">
+                <input type="submit">
+            </form>
+        </div>
+    </main>
     <footer>
         <ul>
             <li><a href="#">Terminos y condiciones</a></li>
-            <li>FAQ</li>
+            <li><a href="faq.php">FAQ</a></li>
             <li>
                 <ul class="redes">
-                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></li>
-                    <li class="iconoF"><a href="https://www.twitter.com/"><i class="fab fa-twitter-square" ></i></li>
+                    <li class="iconoF"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-square" ></i></li>
+                    <li class="iconoF"><a href="https://www.twitter.com/"></a><i class="fab fa-twitter-square" ></i></li>
                 </ul>
             </li>
         </ul>

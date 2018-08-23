@@ -75,11 +75,7 @@ body {
 nav {
     background-color: #03A9F4;
     margin: 0;
-<<<<<<< HEAD
     padding: 0px 3%;
-=======
-    padding: 0px 4vw;
->>>>>>> 95b528e6f2e1bf25643e7468006310602e3dc37c
     height: 65px;
     display: flex;
     align-items: center
@@ -129,7 +125,6 @@ footer {
     align-items: center;
     bottom: 0%;
     width: 100%;
-
 }
 
 footer>ul {
@@ -157,10 +152,11 @@ footer>ul>li>a {
 
 .redes {
     list-style: none;
-    padding: 0em;
+    display: flex;
 }
+
 .iconoF{
-    padding: 0em 0em 0.4em;
+    padding: 0px 0px 0px 14px;
     font-size: 2em;
 }
 
@@ -208,18 +204,33 @@ footer>ul>li>a {
 .categoria {
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: rgb(56, 56, 56);
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 10%;
 }
 
+.categoria>article {
+    width: 50%;
+    padding: 15px 5px;
+    box-sizing: border-box;
+    background-color: #348cca;
+    margin: 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+.categoria>article>a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
 /* Fin categorias */
 
-/*Comienzo de faq (en progreso)*/
-section.faq{
+/* Comienzo de faq (en progreso) */
+
+section.faq {
     margin-top: 2.1em;
 }
 section.faq > article{
@@ -250,8 +261,60 @@ section.faq > section > article > h3.pregunta {
     font-weight: bold;
 
 }
-/*Fin de faq (en progreso)*/
 
+/* Fin de faq (en progreso) */
+
+/* Login */
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    background-color: #f0f0f0;
+    margin: 27px auto;
+    border-radius: 11px;
+    padding: 25px 0px;
+    box-sizing: border-box;
+}
+
+.login-form>form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.login-form>form>input[type=text],.login-form>form>input[type=password]  {
+    background-color: #fff;
+    color: #000;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #3c3f4f;
+    margin: 10px 0px;
+}
+
+.login-form>form>h3 {
+    margin: 0px 0px 20px;
+}
+
+.login-form>form>input[type=submit] {
+    background-color: #40a9f4;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    border: 0px solid #3c3f4f;
+    margin: 10px 0px;
+    font-size: 1em;
+}
+
+.login-form>form>input[type=submit]:hover {
+    background-color: #308cca;
+}
+
+/* End login */
+
+main {
+    min-height: calc(70vh - 68px);
+}
 
 main>div {
     width: 100%;text-align: center;
@@ -276,7 +339,7 @@ img {
 
 @media only screen and (min-width: 600px) {
 
-    /*Home page*/
+    /* Home page */
     .banner {
         height: 80vh;
     }
@@ -313,27 +376,45 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
-<<<<<<< HEAD
-}
-=======
-    /*Fin Home page*/
+    /*Fin Home page */
 
-    /*Faq page*/
-    section.faq > section > article{
+    /*Faq page */
+
+    section.faq>section>article{
         display: flex;
         flex-direction: column;
         width: 50vw;
     }
-    section.faq > section{
+    section.faq>section{
         padding: 0em 2vw;
         display: flex;
     }
-    /*Fin Faq page*/
-    /*footer*/
+
+    /* Fin Faq page */
+
+    /* footer */
+    
     footer>ul {
         flex-direction: row;
     }
-    /*fin footer*/
+    
+    /* fin footer */
+
+
+    /* Categorias */ 
+
+    .categoria>article {
+        width: 30%;
+    }
+
+    /* Fin categorias */ 
+
+    /* Login */ 
+
+    .login-form {
+        width: 35%;
+    }
+
+    /* Fin login */
 }   
 
->>>>>>> 95b528e6f2e1bf25643e7468006310602e3dc37c
