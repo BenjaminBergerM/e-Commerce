@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 /* Banner */
 
 .banner {
@@ -25,7 +26,13 @@ body {
     height: 50vh;
     background-image: url(https://cdn2.educacion2.com/wp-content/uploads/2017/03/profesor-particular-2.jpg);
     background-size: cover;
-    background-position: -113px;
+    background-position: -68px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); 
+    transition: 1s;
 }
 
 .banner>form>input[type=text], .banner>form>select {
@@ -68,14 +75,14 @@ body {
 nav {
     background-color: #03A9F4;
     margin: 0;
-    padding: 0px 65px;
+    padding: 0px 3%;
     height: 65px;
     display: flex;
     align-items: center
 }
 
-.header-i>i {
-    color: aliceblue;
+header>nav i {
+    color: white;
 }
 
 nav>ul {
@@ -201,10 +208,6 @@ main>div {
     width: 100%;text-align: center;
 }
 
-h2 {
-    color: white;
-}
-
 .div-cat {
     display: flex;
     flex-wrap: wrap;
@@ -226,10 +229,17 @@ img {
     .banner {
         height: 80vh;
     }
+    
     .banner>div {
         height: 80vh;
         background-position-x: 0px;
+        -webkit-filter: blur(1.3px);
+        -moz-filter: blur(1.3px);
+        -o-filter: blur(1.3px);
+        -ms-filter: blur(1.3px);
+        filter: blur(1.3px); 
     }
+
     .banner>form {
         flex-direction: row;
         align-items: normal;
@@ -252,6 +262,4 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
-}   
-
-
+}
