@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="Css/main.css" />
 </head>
 <body>
     <header>
@@ -55,15 +55,15 @@
                 </article>
             </section>
         </section>
-    </main
+    </main>
     <footer>
         <ul>
             <li><a href="#">Terminos y condiciones</a></li>
             <li>FAQ</li>
             <li>
                 <ul class="redes">
-                    <li><i class="fab fa-facebook-square"></i></li>
-                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></li>
+                    <li class="iconoF"><a href="https://www.twitter.com/"><i class="fab fa-twitter-square" ></i></li>
                 </ul>
             </li>
         </ul>

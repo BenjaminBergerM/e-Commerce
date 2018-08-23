@@ -30,8 +30,8 @@
             <li>FAQ</li>
             <li>
                 <ul class="redes">
-                    <li><i class="fab fa-facebook-square"></i></li>
-                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></li>
+                    <li class="iconoF"><a href="https://www.twitter.com/"><i class="fab fa-twitter-square" ></i></li>
                 </ul>
             </li>
         </ul>

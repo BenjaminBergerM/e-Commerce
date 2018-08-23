@@ -112,26 +112,31 @@ body {
 /* Footer */
 
 footer {
-    margin: 0;
+    margin-top: 6vw;
     padding: 0;
     height: 45px;
-    display: flex;
     align-items: center;
     bottom: 0%;
     width: 100%;
+
 }
 
 footer>ul {
+    background-color: #03A9F4;
     width: 100%;
-    padding: 0%;
     list-style: none;
     margin: 0%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2em 0em;
 }
 
 footer>ul>li {
     color: rgb(56, 56, 56);
+    margin: .9em;
 }
 
 footer>ul>li>a {
@@ -141,6 +146,11 @@ footer>ul>li>a {
 
 .redes {
     list-style: none;
+    padding: 0em;
+}
+.iconoF{
+    padding: 0em 0em 0.4em;
+    font-size: 2em;
 }
 
 /* Fin footer */
@@ -302,5 +312,10 @@ img {
         display: flex;
     }
     /*Fin Faq page*/
+    /*footer*/
+    footer>ul {
+        flex-direction: row;
+    }
+    /*fin footer*/
 }   
 
