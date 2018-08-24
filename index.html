@@ -18,7 +18,7 @@
                     <li><a class="nav-a" href="/">Nombre</a></li>
                 </div>
                 <div>
-                    <li id="registro"><a class="nav-a" href="#">Registro</a></li>
+                    <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
                     <li><i class="fas fa-user-circle fa-2x"></i></li>
                 </div>
             </ul>
