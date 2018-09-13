@@ -27,13 +27,19 @@
     <main>
         <div class="login-form">
             <form action="" method="post">
-                <h3>Login</h3>
-                <label for="">Email:</label>
+                <h3>Sign Up</h3>
+                <label for="">Nombre:</label>
                 <input type="text">
+                <label for="">Apellido:</label>
+                <input type="text">
+                <label for="">Email:</label>
+                <input type="email">
+                <label for="">Fecha de nacimiento:</label>
+                <input type="date">
                 <label for="">Contrasenia:</label>
                 <input type="password">
-                <label for=""><input type="checkbox">  Recordar mi Contrasenia</label>
-                
+                <label for="">Comfirmar Contrasenia:</label>
+                <input type="password">
                 <input type="submit">
             </form>
         </div>
@@ -44,7 +50,7 @@
             <li><a href="faq.php">FAQ</a></li>
             <li>
                 <ul class="redes">
-                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></a></li>
+                    <li class="iconoF"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-square" ></i></li>
                     <li class="iconoF"><a href="https://www.twitter.com/"></a><i class="fab fa-twitter-square" ></i></li>
                 </ul>
             </li>

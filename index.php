@@ -15,9 +15,11 @@
             <ul>
                 <div>
                     <li class="header-i"><i class="fas fa-graduation-cap"></i></li>
-                    <li><a class="nav-a" href="/">Nombre</a></li>
+                    <li><a class="nav-a" href="index.php">Discite</a></li>
                 </div>
                 <div>
+                    <li id="registro"><a class="nav-a" href="signUp.php">Sign Up</a></li>
+                    <p>/</p>
                     <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
                     <li><i class="fas fa-user-circle fa-2x"></i></li>
                 </div>
@@ -30,8 +32,8 @@
             <form action="" method="POST">
                 <select name="materia" id="">
                     <option value="math">Matematicas</option>
-                    <option value="math">Historia</option>
-                    <option value="math">Geografia</option>
+                    <option value="his">Historia</option>
+                    <option value="geo">Geografia</option>
                 </select>
                 <input type="text" placeholder="¿Dónde estás buscando?">
                 <input type="submit" value="Buscar">
@@ -72,8 +74,8 @@
             <li><a href="faq.php">FAQ</a></li>
             <li>
                 <ul class="redes">
-                    <li class="iconoF"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-square" ></i></li>
-                    <li class="iconoF"><a href="https://www.twitter.com/"></a><i class="fab fa-twitter-square" ></i></li>
+                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></a></li>
+                    <li class="iconoF"><a href="https://www.twitter.com/"><i class="fab fa-twitter-square" ></i></a></li>
                 </ul>
             </li>
         </ul>

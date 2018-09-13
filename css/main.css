@@ -155,9 +155,15 @@ footer>ul>li>a {
     display: flex;
 }
 
+
 .iconoF{
     padding: 0px 0px 0px 14px;
     font-size: 2em;
+    text-decoration: none;
+}
+.iconoF>a{
+    color: rgb(56, 56, 56);
+
 }
 
 /* Fin footer */
