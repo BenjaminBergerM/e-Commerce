@@ -18,7 +18,7 @@
                     <li><a class="nav-a" href="index.php">Discite</a></li>
                 </div>
                 <div>
-                    <li id="registro"><a class="nav-a" href="register.php">Sign Up</a></li>
+                    <li id="registro"><a class="nav-a" href="register.php">Register</a></li>
                     <p>/</p>
                     <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
                     <li><i class="fas fa-user-circle fa-2x"></i></li>

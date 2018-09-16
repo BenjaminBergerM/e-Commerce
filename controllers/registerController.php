@@ -1,18 +1,19 @@
 <?php
 
 require_once 'filesController.php';
-
-// Creamos un array que va a representar a nuestro usuario y lo devolvemos.
-function crearUsuario($username, $email, $password, $fotoPerfil)
+function createUser($name, $lastName, $username, $email, $date, $password, $comfirmPassword)
 {
-    $usuario = [
+    $user = [
+        "name" => $name,
+        "lastName" => $lastName, 
         "username" => $username,
         "email" => $email,
+        "date" => $date,
         "password" => $password,
-        "fotoPerfil" => guardarFoto($fotoPerfil)
+        "comfirmPassword"=>$comfirmPassword,
     ];
 
-    return $usuario;
+    return $user;
 }
 
 
