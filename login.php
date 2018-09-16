@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,22 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <div>
-                    <li class="header-i"><i class="fas fa-graduation-cap"></i></li>
-                    <li><a class="nav-a" href="index.php">Discite</a></li>
-                </div>
-                <div>
-                    <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
-                    <li><i class="fas fa-user-circle fa-2x"></i></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <main>
+<?php require_once '_header.php'?>
         <div class="login-form">
             <form action="" method="post">
                 <h3>Login</h3>
@@ -37,18 +23,4 @@
                 <input type="submit">
             </form>
         </div>
-    </main>
-    <footer>
-        <ul>
-            <li><a href="#">Terminos y condiciones</a></li>
-            <li><a href="faq.php">FAQ</a></li>
-            <li>
-                <ul class="redes">
-                    <li class="iconoF"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square" ></i></a></li>
-                    <li class="iconoF"><a href="https://www.twitter.com/"></a><i class="fab fa-twitter-square" ></i></li>
-                </ul>
-            </li>
-        </ul>
-    </footer>
-</body>
-</html>
+        <?php require_once '_footer.php'?>
