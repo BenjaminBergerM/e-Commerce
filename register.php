@@ -58,30 +58,5 @@ if(isset($errors) && count($errors) > 0): ?>
     </form>
 </div>
 
-<?php require_once '_footer.php'?>
-
-        <div class="login-form">
-            <form action="" method="post" enctype="multipart/form-data">
-                <h3>Sign Up</h3>
-                <label for="name">Nombre:</label>
-                <input type="text" name="name">
-                <label for="">Apellido:</label>
-                <input type="text" name="lastName">
-                <label for="">Username:</label>
-                <input type="text" name="username">
-                <label for="">Email:</label>
-                <input type="email" name="email">
-                <label for="">Fecha de Nacimiento:</label>
-                <input type="date" name="date">
-                <label for="file">Password:</label>
-                <input type="password" name ="password">
-                <label for="">Comfirmar Password:</label>
-                <input type="password" name="comfirmPassword">
-                <input type="submit">
-            </form>
-        </div>
-
-
-
-        <?php require_once '_footer.php'?>
+    <?php require_once '_footer.php'?>
 
