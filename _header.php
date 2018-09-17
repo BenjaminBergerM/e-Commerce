@@ -15,7 +15,7 @@
             <ul>
                 <div>
                     <li class="header-i"><i class="fas fa-graduation-cap"></i></li>
-                    <li><a class="nav-a" href="index.php">Discite</a></li>
+                    <li><a class="nav-a nombre-de-pag" href="index.php">Discite</a></li>
                 </div>
                 <div>
                     <li id="registro"><a class="nav-a" href="register.php">Register</a></li>
