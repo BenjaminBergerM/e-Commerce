@@ -1,3 +1,4 @@
+<?php require_once "controllers/sessionController.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,10 +19,15 @@
                     <li><a class="nav-a" href="index.php">Discite</a></li>
                 </div>
                 <div>
+                <?php if (guest()): ?>
                     <li id="registro"><a class="nav-a" href="register.php">Register</a></li>
                     <p>|</p>
                     <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
-                    <li><i class="fas fa-user-circle fa-2x"></i></li>
+                <?php else: ?>
+                    <li id="registro"><a class="nav-a" href="profile.php"><?= user()['username'] ?></a></li>   
+                    <p>|</p>
+                    <li id="registro"><a class="nav-a" href="logout.php">Cerrar sesión</a></li> 
+                <?php endif; ?>
                 </div>
             </ul>
         </nav>

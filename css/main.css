@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /* Banner */
 
 .banner {
@@ -341,6 +342,26 @@ img {
     width: 100%;
 }
 
+/* Pagina Profile */
+
+article.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+article.perfil>ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Fin pagina Perfil*/
+
+.nombre-de-pag{
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 
 @media only screen and (min-width: 600px) {

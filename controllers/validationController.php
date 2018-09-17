@@ -10,7 +10,7 @@
                 $errors['name'] = 'El nombre es muy corto.';
             } elseif (strlen($user['name']) > 15) {
                 $errors['name'] = 'El nombre es muy largo.';
-            } 
+            }
         }
             if (isset($user['lastName'])) {
                 if (empty($user['lastName'])) {

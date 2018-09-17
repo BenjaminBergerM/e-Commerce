@@ -25,6 +25,10 @@ if ($_POST && $_FILES)
     }
 }
 
+if (check()) {
+    redirect('profile.php');
+}
+
 ?>
 <?php require_once '_header.php'?>
 <?php 
