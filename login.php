@@ -1,4 +1,18 @@
+<?php
+ require_once 'controllers/helpers.php';
+ require_once 'controllers/loginController.php';
+ require_once 'controllers/sessionController.php';
+if($_POST){
+$verify=verifyUser($_POST['email'],$_POST['password']);
+if($verify){
+    $user = bringUser($_POST['email']);
+    redirect('profile.php');
+}else{
+    $errors['email']="El usuario o la password es incorrecto.";
+}
+}
 
+?>
 <!DOCTYPE html>
 <html>
 <head>

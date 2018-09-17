@@ -77,7 +77,19 @@
     }
     function check()
 {
-    return isset($_SESSION['usuario']);
+    return isset($_SESSION['user']);
+}
+function guest()
+{
+    return !check();
+}
+function user()
+{
+    if (check()) {
+        return $_SESSION['user'];
+    } else {
+        return false;
+    }
 }
 
 ?>

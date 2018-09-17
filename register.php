@@ -16,7 +16,6 @@ if($_POST){
     $errors['email'] = 'El email ya está usado.';
 }
 }
-echo var_dump($user['date'])
 ?>
     <?php require_once '_header.php'?>
 <?php 

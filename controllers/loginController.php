@@ -1,13 +1,11 @@
 <?php
     require_once 'filesController.php';
-
-    // Verificamos que el usuario exista en base de datos y su contraseña sea correcta
-    function verificaUsuario($email, $password)
+    function verifyUser($email, $password)
     {
-        $usuario = traerUsuario($email);
+        $user = bringUser($email);
 
-        if ($usuario !== null) {
-            return password_verify($password, $usuario['password']);
+        if ($user !== null) {
+            return password_verify($password, $user['password']);
         }
 
         return false;

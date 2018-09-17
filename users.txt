@@ -1,0 +1,1 @@
+{"name":"Santiago","lastName":"despontin","username":"Santicapo123","email":"santiagodespontin@gmail.com","date":"2018-12-31","password":"$2y$10$vFdZb4DGhm48x4WT6k9UKuIdDd05O0dMCme5u\/9dAN1AtV5whnTVy","comfirmPassword":"12345678"}
