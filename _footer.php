@@ -1,7 +1,7 @@
 </main>
 <footer>
     <ul>
-        <li><a href="#">Terminos y condiciones</a></li>
+        <li><a href="">Terminos y condiciones</a></li>
         <li><a href="faq.php">FAQ</a></li>
         <li>
             <ul class="redes">

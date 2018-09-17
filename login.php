@@ -9,7 +9,7 @@ if ($_POST){
         $user = bringUser($_POST['email']);
         redirect('profile.php');
     } else {
-        $errors['email']="El usuario o la password es incorrecto.";
+        $errors['email'] = "El usuario o la password es incorrecto.";
     }
 }
 ?>
@@ -18,7 +18,7 @@ if ($_POST){
 <?php
     if (isset($errors['email'])) {
         echo $errors['email'];
-    } 
+    }
 ?>
 <div class="login-form">
     <form action="" method="post">
