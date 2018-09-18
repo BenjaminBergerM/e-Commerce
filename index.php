@@ -1,12 +1,27 @@
 <?php session_start(); ?>
+<?php
+
+class año {
+
+}
+$año = new año();
+
+?>
 <?php require_once '_header.php'?>
 <section class="banner">
     <div></div>
     <form action="" method="POST">
         <select name="materia" id="">
-            <option value="math">Matematicas</option>
-            <option value="his">Historia</option>
-            <option value="geo">Geografia</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Historia">Historia</option>
+            <option value="Geografia">Geografia</option>
+            <option value="Economia">Economia</option>
+            <option value="Teoria Contable">Teoria Contable</option>
+            <option value="Dibujo">Dibujo</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Frances">Frances</option>
+            <option value="Canto">Canto</option>
+            <option value="Baile">Baile</option>
         </select>
         <input type="text" placeholder="¿Dónde estás buscando?">
         <input type="submit" value="Buscar">
