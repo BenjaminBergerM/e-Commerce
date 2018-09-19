@@ -5,14 +5,14 @@ function saveUser($user)
     file_put_contents('users.txt', $userJson . PHP_EOL, FILE_APPEND);
 }
 
-function traerusers()
+function bringUsers()
 {
     $arrayusers = [];
-    $archivo = fopen('users.txt', 'r');
-    while(($linea = fgets($archivo)) !== false) {
+    $file = fopen('users.txt', 'r');
+    while(($linea = fgets($file)) !== false) {
         $arrayusers[] = json_decode($linea, true);
     }
-    fclose($archivo);
+    fclose($file);
 
     return $arrayusers;
 }
@@ -21,9 +21,9 @@ function bringUser($email)
 {
     $user = null;
 
-    $archivo = fopen('users.txt', 'r');
+    $file = fopen('users.txt', 'r');
 
-    while(($line = fgets($archivo)) !== false) {
+    while(($line = fgets($file)) !== false) {
         $actualUser = json_decode($line, true);
 
         if ($actualUser['email'] === $email) {
@@ -32,7 +32,7 @@ function bringUser($email)
         }
     }
 
-    fclose($archivo);
+    fclose($file);
 
     return $user;
 }
@@ -40,15 +40,15 @@ function bringUser($email)
 function saveProfilePic($pic) {
     if($pic["error"] === UPLOAD_ERR_OK){
         $nombre = $pic["name"];
-        $archivo = $pic["tmp_name"];
+        $file = $pic["tmp_name"];
 
         $ext = pathinfo($nombre, PATHINFO_EXTENSION);
 
         $id = uniqid();
-        $miArchivo = realpath(dirname(__FILE__)."/..");
-        $miArchivo = $miArchivo . "\archivos\\$id.$ext";
+        $myFile = realpath(dirname(__FILE__)."/..");
+        $myFile = $myFile . "\files\\$id.$ext";
 
-        move_uploaded_file($archivo, $miArchivo);
+        move_uploaded_file($file, $myFile);
 
         return "$id.$ext";
     }

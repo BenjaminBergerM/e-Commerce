@@ -3,7 +3,6 @@ session_start();
 require_once 'controllers/helpers.php';
 require_once 'controllers/loginController.php';
 require_once 'controllers/sessionController.php';
-
 if ($_POST){
     $verify = verifyUser($_POST['email'],$_POST['password']);
     if ($verify){
@@ -14,6 +13,7 @@ if ($_POST){
         $errors['email'] = "El usuario o la password es incorrecto.";
     }
 }
+
 
 if (check()) {
     redirect('profile.php');
@@ -34,7 +34,7 @@ if (check()) {
         <input type="email" name="email">
         <label for="">Contrasenia:</label>
         <input type="password" name="password">
-        <label for=""><input type="checkbox">  Recordar mi Contrasenia</label>
+        <label for=""><input type="checkbox" name="remindme">  Recordar mi Contrasenia</label>
         <input type="submit">
     </form>
 </div>

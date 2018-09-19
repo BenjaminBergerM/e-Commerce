@@ -1,17 +1,17 @@
 <?php
 
-    function crearSesion($usuario) {
+    function createSession($user) {
 
-        $_SESSION['usuario'] = $usuario;
+        $_SESSION['user'] = $user;
 
 
-        if (isset($_POST['recordar'])) {
+        if (isset($_POST['remindme'])) {
 
-            $time = time() + 3600 * 24 * 7;
+            $time = time() + 3600*88;
 
-            setcookie("usuario", json_encode($usuario), $time);
+            setcookie("user", json_encode($user), $time);
 
-            setcookie("email", $usuario['email'], $time);
+            setcookie("email", $user['email'], $time);
         } else {
 
             setcookie("email", null, time()-1);
@@ -19,7 +19,7 @@
 
     }
 
-    function cerrarSesion() {
+    function closeSesion() {
 
         if (!$_SESSION) {
             session_start();
@@ -27,31 +27,31 @@
 
         session_destroy();
 
-        setcookie('usuario', null, time()-1);
+        setcookie('user', null, time()-1);
     }
 
-    function leerCookie($campo) {
+    function readCookie($field) {
 
-        if (isset($_COOKIE[$campo])) {
+        if (isset($_COOKIE[$field])) {
 
-            if (json_decode($_COOKIE[$campo]) !== NULL) {
+            if (json_decode($_COOKIE[$field]) !== NULL) {
 
-                return json_decode($_COOKIE[$campo], true);
+                return json_decode($_COOKIE[$field], true);
             }
 
-            return $_COOKIE[$campo];
+            return $_COOKIE[$field];
         }
 
         return false;
     }
 
-    function mantenerSesion() {
+    function keepSesion() {
 
-        if (isset($_COOKIE['usuario']) && !isset($_SESSION['usuario'])) {
+        if (isset($_COOKIE['user']) && !isset($_SESSION['user'])) {
 
-            $_SESSION['usuario'] = leerCookie('usuario');
+            $_SESSION['user'] = readCookie('user');
 
-            setcookie('usuario', $_COOKIE['usuario'], time()+3600*24*7);
+            setcookie('user', $_COOKIE['user'], time()+3600*24*7);
         }
     }
 

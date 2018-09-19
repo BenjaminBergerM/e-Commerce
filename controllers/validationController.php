@@ -53,9 +53,7 @@
             } elseif (strlen($user['password']) >= 16) {
                 $errors['password'] = 'El password debe tener 15 caracteres o menos.';
             }elseif($user['password']!== $user['comfirmPassword']){
-                $errors['password']='Las contraseña no coincide';
-                exit;
-            
+                $errors['password']='Las contraseña no coincide';            
             }
         }
         
