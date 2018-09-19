@@ -14,6 +14,7 @@ if ($_POST && $_FILES)
         $errors = validateRegister($user);
         if (count($errors) === 0) {
             $user['password'] = password_hash($user['password'], PASSWORD_DEFAULT);
+            $user['comfirmPassword'] = password_hash($user['comfirmPassword'], PASSWORD_DEFAULT);
             $picID = saveProfilePic($_FILES['profilePic']);
             $user["profilePic"] = $picID;
             saveUser($user);

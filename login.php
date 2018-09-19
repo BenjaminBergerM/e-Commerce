@@ -31,7 +31,7 @@ if (check()) {
     <form action="" method="post">
     <h3>Login</h3>
         <label for="">Email:</label>
-        <input type="email" name="email">
+        <input type="email" name="email" value="<?= old('email'); ?>">
         <label for="">Contrasenia:</label>
         <input type="password" name="password">
         <label for=""><input type="checkbox" name="remindme">  Recordar mi Contrasenia</label>

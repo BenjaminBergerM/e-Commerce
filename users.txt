@@ -1,1 +1,3 @@
 {"name":"Benjamin","lastName":"Berger","username":"BenjaminBerger","email":"benjaminbergermaurette@gmail.com","date":"2000-07-21","password":"$2y$10$dwdRRphYlrRyPBs4bFWJ0.B1r\/5bNv\/DDKOiePfcM8j4CSB7vGqQ6","comfirmPassword":"Benjamin00","profilePic":"5b9fd735e7035.png"}
+{"name":"Benjamin","lastName":"Berger","username":"Benjamin Berger","email":"benjamin@berger.com","date":"2000-07-21","password":"$2y$10$R2NMcV9iV1x8HqC2IeSkK.Bg\/3AB1gbVpGhNhEFrsWe4PizkuJlDK","comfirmPassword":"Benjamin00","profilePic":"5b9ff8bca5995.png"}
+{"name":"montoto1","lastName":"Berger","username":"Benjaminb","email":"benjamin@b.com","date":"2000-07-21","password":"$2y$10$Lb3DoPHJWOMzvOpPC\/i6muMZr9vFb8Z9lM0iEz6zGVrDS4i5275iC","comfirmPassword":"Benjamin00","profilePic":null}
