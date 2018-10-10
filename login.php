@@ -12,6 +12,7 @@ if ($_POST){
     }
 }
 
+
 if (check()) {
     redirect('profile.php');
 }
