@@ -1,11 +1,5 @@
-<?php session_start(); ?>
-<?php
-
-class año {
-
-}
-$año = new año();
-
+<?php 
+require_once 'helpers.php';
 ?>
 <?php require_once '_header.php'?>
 <section class="banner">

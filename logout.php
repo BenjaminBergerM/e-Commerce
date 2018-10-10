@@ -1,10 +1,8 @@
 <?php
 
-require_once 'controllers/helpers.php';
+require_once 'helpers.php';
 
-session_start();
-
-session_destroy();
+$session->cerrarSesion();
 
 redirect("index.php");
 

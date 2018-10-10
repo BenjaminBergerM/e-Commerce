@@ -1,14 +1,11 @@
 <?php
-session_start();
-require_once 'controllers/helpers.php';
-require_once 'controllers/loginController.php';
-require_once 'controllers/sessionController.php';
+require_once 'helpers.php';
 
 if ($_POST){
-    $verify = verifyUser($_POST['email'],$_POST['password']);
+    $verify = $db->verifyUser($_POST['email'],$_POST['password']);
     if ($verify){
-        $user = bringUser($_POST['email']);
-        $_SESSION['user'] = $user;
+        $user = $db->bringUser($_POST['email']);
+        $session->crearSesion($user);
         redirect('profile.php');
     } else {
         $errors['email'] = "El usuario o la password es incorrecto.";

@@ -1,4 +1,3 @@
-<?php require_once "controllers/sessionController.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +23,7 @@
                     <p>|</p>
                     <li id="registro"><a class="nav-a" href="login.php">Login</a></li>
                 <?php else: ?>
-                    <li id="registro"><a class="nav-a" href="profile.php"><?= user()['username'] ?></a></li>   
+                    <li id="registro"><a class="nav-a" href="profile.php"><?= user()->getUsername() ?></a></li>   
                     <p>|</p>
                     <li id="registro"><a class="nav-a" href="logout.php">Cerrar sesión</a></li> 
                 <?php endif; ?>

@@ -1,24 +1,21 @@
 <?php 
-session_start();
-require_once 'controllers/registerController.php'; 
-require_once 'controllers/validationController.php'; 
-require_once 'controllers/sessionController.php';
-require_once 'controllers/helpers.php';
-
+require_once 'helpers.php';
+require_once 'controllers/filesController.php';
 
 if ($_POST && $_FILES)
 {
-    $oldUser = bringUser($_POST['email']);
+    $oldUser = $db->bringUser($_POST['email']);
     if ($oldUser==null){
-        $user = createUser($_POST['name'], $_POST['lastName'], $_POST['username'], $_POST['email'],$_POST['date'], $_POST['password'],$_POST['comfirmPassword']);
-        $errors = validateRegister($user);
+        $user = new User($_POST['username'], $_POST['email'], $_POST['password'], '');
+        $user->setName($_POST['name'])->setLastName($_POST['lastName'])->setDate($_POST['date'])->setComfirmPassword($_POST['comfirmPassword']);
+        $errors = Validator::validateRegister($user);
         if (count($errors) === 0) {
-            $user['password'] = password_hash($user['password'], PASSWORD_DEFAULT);
-            $user['comfirmPassword'] = password_hash($user['comfirmPassword'], PASSWORD_DEFAULT);
+            $user->setPassword(password_hash($user->getPassword(), PASSWORD_DEFAULT));
+            $user->setComfirmPassword(password_hash($user->getComfirmPassword(), PASSWORD_DEFAULT));
             $picID = saveProfilePic($_FILES['profilePic']);
-            $user["profilePic"] = $picID;
-            saveUser($user);
-            $_SESSION['user'] = $user;
+            $user->setFotoPerfil($picID);
+            $db->saveUser($user);
+            $session->crearSesion($user);
             redirect("profile.php");
         }
     } else {
