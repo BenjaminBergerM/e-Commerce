@@ -1,33 +1,38 @@
 <?php
-require_once 'controllers/helpers.php';
-require_once 'controllers/loginController.php';
-require_once 'controllers/sessionController.php';
+require_once 'helpers.php';
 
 if ($_POST){
-    $verify = verifyUser($_POST['email'],$_POST['password']);
+    $verify = $db->verifyUser($_POST['email'],$_POST['password']);
     if ($verify){
-        $user = bringUser($_POST['email']);
+        $user = $db->bringUser($_POST['email']);
+        $session->crearSesion($user);
         redirect('profile.php');
     } else {
-        $errors['email']="El usuario o la password es incorrecto.";
+        $errors['email'] = "El usuario o la password es incorrecto.";
     }
 }
+
+
+if (check()) {
+    redirect('profile.php');
+}
+
 ?>
 
 <?php require_once '_header.php'?>
 <?php
     if (isset($errors['email'])) {
         echo $errors['email'];
-    } 
+    }
 ?>
 <div class="login-form">
     <form action="" method="post">
     <h3>Login</h3>
         <label for="">Email:</label>
-        <input type="email" name="email">
+        <input type="email" name="email" value="<?= old('email'); ?>">
         <label for="">Contrasenia:</label>
         <input type="password" name="password">
-        <label for=""><input type="checkbox">  Recordar mi Contrasenia</label>
+        <label for=""><input type="checkbox" name="remindme">  Recordar mi Contrasenia</label>
         <input type="submit">
     </form>
 </div>
