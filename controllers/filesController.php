@@ -20,13 +20,14 @@ function saveProfilePic($pic) {
 
         $ext = pathinfo($nombre, PATHINFO_EXTENSION);
 
-        $id = uniqid();
+        $id = uniqid() . '.' . $ext;
         $myFile = realpath(dirname(__FILE__)."/..");
-        $myFile = $myFile . "\files\\$id.$ext";
+        $myFile = $myFile . "/archivos/";
+        $myFile = $myFile . $id;
 
         move_uploaded_file($file, $myFile);
 
-        return "$id.$ext";
+        return $id;
     }
 }
 

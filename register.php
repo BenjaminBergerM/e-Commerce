@@ -5,7 +5,7 @@ require_once 'controllers/filesController.php';
 if ($_POST && $_FILES)
 {
     $oldUser = $db->bringUser($_POST['email']);
-    if ($oldUser==null){
+    if ($oldUser===null){
         $user = new User($_POST['username'], $_POST['email'], $_POST['password'], '');
         $user->setName($_POST['name'])->setLastName($_POST['lastName'])->setDate($_POST['date'])->setComfirmPassword($_POST['comfirmPassword']);
         $errors = Validator::validateRegister($user);
