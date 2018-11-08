@@ -21,6 +21,24 @@ class JSON extends Database {
         return $user;
     }
 
+    public function bringUsers() {
+        $users = [];
+    
+        $archivo = fopen('users.txt', 'r');
+    
+        while(($line = fgets($archivo)) !== false) {
+            $actualUser = json_decode($line, true);
+            $user = new User($actualUser['username'], $actualUser['email'], $actualUser['password'], ($actualUser['profilePic'] != null) ? $actualUser['profilePic'] : '');
+            $user->setName($actualUser['name'])->setLastName($actualUser['lastName'])->setDate($actualUser['date']);
+            $users[] = $user;
+        }
+    
+        fclose($archivo);
+    
+        return $users;
+
+    }
+
     function saveUser(User $user)
     {
         $userToSave = [

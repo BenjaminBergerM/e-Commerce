@@ -13,10 +13,10 @@ class User {
 
     public function __construct(String $username, String $email, String $password, String $fotoPerfil = "")
     {
-            $this->setUsername($username);
-            $this->setEmail($email);
-            $this->setPassword($password);
-            $this->setFotoPerfil($fotoPerfil);
+        $this->setUsername($username);
+        $this->setEmail($email);
+        $this->setPassword($password);
+        $this->setFotoPerfil($fotoPerfil);
     }
 
     public function getName()
